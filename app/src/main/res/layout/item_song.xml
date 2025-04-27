@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardThumb"
+        android:layout_width="@dimen/card_thumb_size"
+        android:layout_height="@dimen/card_thumb_size"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="?attr/colorSecondaryContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+        android:id="@+id/tvTittle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Song Tittle "
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/cardThumb"
+        app:layout_constraintTop_toTopOf="@id/cardThumb"
+        app:layout_constraintEnd_toStartOf="@id/btnItemPlay"
+        app:layout_goneMarginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/tvArtist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Artist Name"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/tvTittle"
+        app:layout_constraintTop_toBottomOf="@id/tvTittle"
+        app:layout_constraintEnd_toEndOf="@id/tvTittle"/>
+
+    <ImageButton
+        android:id="@+id/btnItemPlay"
+        android:layout_width="@dimen/item_play_size"
+        android:layout_height="@dimen/item_play_size"
+        android:src="@drawable/ic_play_arrow"
+        app:tint="@color/colorTextPrimary"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

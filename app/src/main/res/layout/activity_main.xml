@@ -77,6 +77,95 @@
       </LinearLayout>
    </com.google.android.material.card.MaterialCardView>
 
+   <!-- Playlist section Header-->
+   <TextView
+      android:id="@+id/tvPlaylistHeader"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      android:text="Playlist"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      android:textColor="@color/colorTextPrimary"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="24dp"
+      app:layout_constraintTop_toBottomOf="@id/linkCard"
+      app:layout_constraintStart_toStartOf="parent"/>
+
+   <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/rvPlaylist"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+      app:layout_constraintTop_toBottomOf="@id/tvPlaylistHeader"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/flControls"/>
+
+
+   <!--controller place holder-->
+   <com.google.android.material.card.MaterialCardView
+      android:id="@+id/flControls"
+       android:layout_width="0dp"
+       android:layout_height="305dp"
+      app:cardCornerRadius="0dp"
+      app:cardElevation="4dp"
+      app:cardBackgroundColor="@color/colorBackgroundSecondary"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+      <!--Play Button will be here-->
+      <ImageButton
+         android:id="@+id/btnPlayCenter"
+          android:layout_width="@dimen/play_button_size"
+          android:layout_height="@dimen/play_button_size"
+         android:src="@drawable/ic_play_arrow"
+          android:scaleType="centerInside"
+          android:adjustViewBounds="true"
+         android:background="?attr/selectableItemBackgroundBorderless"
+         app:tint="@color/colorAccent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"/>
+
+      <ImageButton
+         android:id="@+id/btnPrev"
+          android:layout_width="@dimen/prev_button_size"
+          android:layout_height="@dimen/prev_button_size"
+         android:src="@drawable/ic_skip_previous"
+         app:tint="@color/colorAccent"
+         android:background="?attr/selectableItemBackgroundBorderless"
+         app:layout_constraintEnd_toStartOf="@id/btnPlayCenter"
+         app:layout_constraintTop_toTopOf="@id/btnPlayCenter"
+         app:layout_constraintBottom_toBottomOf="@id/btnPlayCenter"
+         android:layout_marginEnd="16dp"/>
+
+      <ImageButton
+         android:id="@+id/btnNext"
+          android:layout_width="@dimen/next_button_size"
+          android:layout_height="@dimen/next_button_size"
+         android:src="@drawable/ic_skip_next"
+         app:tint="@color/colorAccent"
+         android:background="?attr/selectableItemBackgroundBorderless"
+         app:layout_constraintStart_toEndOf="@id/btnPlayCenter"
+         app:layout_constraintTop_toTopOf="@id/btnPlayCenter"
+         app:layout_constraintBottom_toBottomOf="@id/btnPlayCenter"
+         android:layout_marginStart="16dp"/>
+
+
+
+
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
