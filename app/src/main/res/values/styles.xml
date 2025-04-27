@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+                     <!--Base application theme-->
+    + <style name="Theme.AwesomeMusicPlayer"
+    parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+                     <!--Primary Brand color-->
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorTextPrimary</item>
+
+                     <!--Surfaces-->
+    <item name="colorSurface">@color/colorBackgroundPrimary</item>
+    <item name="colorOnSurface">@color/colorTextPrimary</item>
+    <item name="android:windowBackground">@color/colorBackgroundPrimary</item>
+
+
+                    <!--Secondary surfaces(cards,input pills)-->
+    <item name="colorSecondaryContainer">@color/colorBackgroundSecondary</item>
+
+                     <!--Typography defaults(optional tweaks)-->
+    <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+    <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+
+
+    <!--Shapes defaults for consistent rounding-->
+    <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Material3.SmallComponent</item></style>
+
+
+
+
+       <!--Custom Shape:24dp rounded corner-->
+    <style name="Shape.SmallComponent" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+</resources>

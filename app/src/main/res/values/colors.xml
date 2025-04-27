@@ -1,0 +1,16 @@
+<resources>
+    <!-- Dark background surfaces -->
+    <color name="colorBackgroundPrimary">#121212</color>   <!-- main app background -->
+    <color name="colorBackgroundSecondary">#1E1E1E</color> <!-- cards, sheets -->
+
+    <!-- Text on dark backgrounds -->
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextSecondary">#B3FFFFFF</color>     <!-- 70% white -->
+
+    <!-- Accent (Spotify-green vibe) -->
+    <color name="colorAccent">#1DB954</color>
+
+    <!-- Input pill -->
+    <color name="colorInputBackground">#2C2C2C</color>
+    <color name="colorHint">#70FFFFFF</color>             <!-- 70% white hint -->
+</resources>
